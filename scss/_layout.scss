@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    max-width:1900px;
+    margin:0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template: "header"
+                   "main"
+                   "footer";
+}
+img {
+    max-width: 100%;
+}
+
+.header {
+    grid-area: header;
+    margin:0;
+    padding:0;
+
+
+
+}
+
+.main {
+    grid-area:main;
+    margin:0;
+    padding:0;
+
+
+ }
+
+.footer {
+    grid-area: footer;
+
+
+}

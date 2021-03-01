@@ -1,0 +1,505 @@
+.main {
+
+
+    margin:0 auto;
+    text-align: center;
+
+
+}
+
+
+.main-image {
+    background-image: url('/assets/main-image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:700px;
+    margin:0;
+    padding:0;
+    position: relative;
+
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    line-height:0;
+
+    .main-titles {
+        line-height: 1rem;
+    }
+
+    .title , .title-description {
+        color:$white-color;
+        font-family: $primary-font;
+      
+    }
+
+    .title {
+        font-size: 2.75rem;
+        letter-spacing: .1rem;
+    }
+    .title-description {
+        font-size: 2rem;
+        letter-spacing: .05rem;
+    }
+}
+.main-arrow {
+    position: absolute;
+    bottom:0;
+    #arrow {
+        font-size: 2rem;
+        color:$white-color;
+    }
+}
+
+
+/* Services */
+
+.main-title {
+    padding-top:4rem;
+    font-family: $secondary-font;
+    font-size: 1.75rem;
+    letter-spacing: .05rem;
+
+}
+.main-description {
+    font-family: $primary-font;
+    width:70%;
+    font-size: $desktop-font;
+    margin:0 auto;
+    letter-spacing: .02rem;
+    line-height:1.5rem;
+}
+
+.services-info {
+    text-align: center;
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-around;
+    .services-list {
+        text-align: start;
+        list-style: none;
+        margin:0;
+        padding:0;
+        .services-item {
+            font-family: $secondary-font;
+            font-weight: bold;
+            font-size:1.5rem;
+            margin:1rem;
+        }
+        .horas {
+            font-family: $secondary-font;
+            padding-top: 1rem;
+            margin-left:3rem;
+        }
+    }
+
+    .container-circle {
+        border-radius:50%;
+        width:450px;
+        height:450px;
+        position: relative;
+        box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+        .circle-image {
+            border-radius:50%;
+            position: absolute;
+            width:85%;;
+            height:85%;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin: auto;
+            background-image: url('/assets/services-image.JPG');
+            background-position: center;
+            background-clip:border-box;
+            background-position: center;
+            background-size: cover;
+            filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+
+}
+
+
+/* Cars */
+.cars {
+    padding:4rem 0;
+}
+.cars-title {
+    font-family: $secondary-font;
+}
+
+.cars-list {
+    width:80%;
+    margin:0 auto;
+    .cars-item {
+        font-family: $primary-font;
+        list-style: none;
+        margin:0;
+        padding:0;
+        text-align: start;
+        line-height:2rem;
+        padding:1rem;
+        position: relative;
+        font-size: 1.2rem;
+  
+    
+    }
+    .cars-list-style {
+        width:50px;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:-4rem;
+        color:$blue-secondary-color;
+        margin:auto;
+    }
+    #gps {
+        width:60px;
+        left:-4.3rem;
+    }
+}
+
+/* contact us */
+
+
+.contact-us {
+    height:500px;
+    background-image: url('/assets/contact-image.png');
+    background-position: center;
+    background-clip:border-box;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contact-btn {
+        border:none;
+        padding:1rem;
+        border-radius: .8rem;
+        background-color: rgba(255, 134, 0, 0.6);
+        color:$white-color;
+        font-size: 1.5rem;
+        font-family: $primary-font;
+        font-weight: bold;
+    }
+    
+}
+
+/* experiencia */
+
+
+.experience {
+    display: flex;
+    justify-content: space-around;
+
+    margin:0 auto;
+    padding:4rem;
+
+    .experience-info {
+        padding:2rem;
+        text-align: center;
+        width:50%;
+        font-family: $primary-font;
+        line-height:2rem;
+        font-size: 1rem;
+
+        p {
+            max-width:500px;
+            margin:0 auto,
+        }
+
+    }
+    .separator {
+        width:3px;
+        height: inherit;;
+        background-color: $orange-color;
+    }
+    .experience-titles {
+        padding:2rem;
+        width: 40%;
+  
+        font-family: $secondary-font;  
+
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 0;
+
+    }
+}
+
+/* Numeros */
+
+
+.numbers-title {
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+}
+.numbers-info {
+    font-family: $primary-font;
+}
+
+.svg-circle {
+    width:250px;
+    height:250px;
+    position: relative;
+}
+
+
+.percent {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    right:0;
+    left:0;
+    margin:auto;
+
+    transform: translateY(36%);
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.track {
+    stroke:#fff;
+    fill:none;
+}
+.progress {
+    fill:none;
+    stroke:rgb(86, 143, 189);
+    stroke-width: 10;
+    
+
+}
+
+.container-circles {
+    display: flex;
+    margin:0 auto;
+    flex-wrap: wrap;
+    width:80%;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding:5rem 0;
+
+}
+.svg-container {
+    text-align: center;
+    position: relative;
+
+  
+}
+
+.percent-info {
+    font-family: $primary-font;
+}
+
+/* Clientes */
+
+
+.clients {
+
+    padding:4rem;
+    background-color: #C2E7D9;
+
+    h2 {
+        font-family: $secondary-font;
+        color:$blue-color;
+        width:100%;
+
+    }
+
+    .client-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: space-around;
+
+        .client-card {
+            width:50%;
+            min-width: 300px;
+            max-width: 600px;;
+            text-align: start;
+            line-height: 0;
+            
+            .client-name {
+                font-family: $secondary-font;
+                font-weight: bold;
+                font-size: 1.3rem;
+                
+                
+            }
+            .client-position {
+                font-family: $secondary-font;
+                font-weight: bold;
+                font-size:.9rem;
+                line-height: 1rem;
+     
+            }
+
+            .client-comment {
+                line-height: 1rem ;
+                font-family: $secondary-font;
+                font-size:1rem;
+            }
+        }
+    }
+
+    .container-circle-image {
+
+        border-radius:50%;
+
+        margin:0 auto;
+        width:300px;
+        height:300px;
+        position: relative;
+        box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+        .clients-image{ 
+            border-radius:50%;
+            position: absolute;
+            width:85%;;
+            height:85%;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin: auto;
+            background-image: url('/assets/clients-image.jpg');
+            background-position: center;
+            background-clip:border-box;
+            background-position: center;
+            background-size: cover;
+            filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+        }
+    }
+}
+
+/* empresas */
+
+.companies {
+    padding:4rem 0  8rem 0;
+    h2 {
+        font-family: $secondary-font;
+        color:$blue-color;
+        font-size: 1.5rem;
+    }
+
+    .companies-icons {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width:90%;
+        margin:2rem auto;
+        flex-wrap: wrap;
+
+        img {
+            width:140px;
+        }
+
+    }
+}
+
+/* footer */
+
+.footer {
+    background-color: $blue-secondary-color;
+    text-align: center;
+    padding:4rem     0;
+    text-align: center;
+
+    .footer-info {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+       
+
+        .footer-description {
+            display: flex;
+   
+            justify-content: space-around;
+            align-items: flex-start;
+            align-content: center;
+            text-align: center;
+
+
+            h2 {
+                font-family: $secondary-font;
+                color:$green-color;
+            }
+            text-align: start;
+
+            ul {
+                margin:2rem;
+            }
+        }
+
+
+        ul li {
+            list-style: none;
+            margin:0;
+      
+            margin:.5rem 0;
+        }
+
+        ul li a {
+            font-family: $primary-font;
+            text-decoration: none;
+            color:$white-color;
+            font-weight: bold;
+        
+        }
+
+
+        img {
+            width:200px;
+        }
+
+        .footer-contact {
+            .phone-svg {
+                width:20px;
+                margin:0 .5rem;
+            }
+            .mail-svg {
+                width:20px;
+                margin:0 .5rem;
+            }
+        }
+    }
+
+    .copyright {
+        margin-top:4rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        .copyright-svg {
+            width:30px;
+            padding:0 .5rem;
+            
+          
+        }
+        p {
+            display: inline;
+            font-family: $primary-font;
+            font-weight: bold;
+            color:$white-color;
+        }
+    }
+}

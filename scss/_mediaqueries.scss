@@ -1,0 +1,67 @@
+// Small devices (landscape phones, 576px and up)
+
+
+@media (max-width: 992px) {  
+
+
+    .services-info {
+        flex-direction: column;
+
+        .container-circle {
+            margin:4rem 0;
+        }
+    }
+
+    .experience {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .separator {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .footer-description {
+        flex-direction: column-reverse;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .experience {
+        .experience-titles {
+            width:100%;
+        }
+        .experience-info {
+            width:100%;
+            min-width:200px;
+
+
+        }
+    
+    }
+
+   
+ 
+}
+
+@media (max-width: 1200px) {  
+
+
+
+    .services-info {
+
+        .container-circle {
+            width:350px;
+            height: 350px;
+        }
+    }
+
+
+   
+ 
+}
+
