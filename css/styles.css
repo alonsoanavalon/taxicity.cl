@@ -316,7 +316,7 @@ img {
 .header {
   grid-area: header;
   margin: 0;
-  padding: 0; }
+  padding: .5rem 0; }
 
 .main {
   grid-area: main;
@@ -340,14 +340,15 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: center; }
+    align-content: center;
+    display: none; }
     .nav .nav-menu a {
       padding: 2rem;
       text-decoration: none;
       color: #758BFD;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
-      font-size: 1.2rem; }
+      font-size: 1.15rem; }
     .nav .nav-menu .nav-contact {
       padding: .8rem;
       background-color: #C2E7D9;
@@ -373,7 +374,9 @@ img {
   text-align: center;
   line-height: 0; }
   .main-image .main-titles {
-    line-height: 1rem; }
+    line-height: 2rem;
+    padding: 2rem;
+    background-color: rgba(207, 218, 241, 0.25); }
   .main-image .title, .main-image .title-description {
     color: #fff;
     font-family: "Montserrat", sans-serif; }
@@ -395,13 +398,13 @@ img {
 .main-title {
   padding-top: 4rem;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: .05rem; }
 
 .main-description {
   font-family: "Montserrat", sans-serif;
   width: 70%;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin: 0 auto;
   letter-spacing: .02rem;
   line-height: 1.5rem; }
@@ -453,7 +456,8 @@ img {
   padding: 4rem 0; }
 
 .cars-title {
-  font-family: "Libre Franklin", sans-serif; }
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem; }
 
 .cars-list {
   width: 80%;
@@ -467,7 +471,7 @@ img {
     line-height: 2rem;
     padding: 1rem;
     position: relative;
-    font-size: 1.2rem; }
+    font-size: 1.15rem; }
   .cars-list .cars-list-style {
     width: 50px;
     position: absolute;
@@ -488,6 +492,7 @@ img {
   background-clip: border-box;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -505,15 +510,16 @@ img {
 .experience {
   display: flex;
   justify-content: space-around;
+  width: 80%;
   margin: 0 auto;
-  padding: 4rem; }
+  padding: 4rem 0; }
   .experience .experience-info {
     padding: 2rem;
     text-align: center;
     width: 50%;
     font-family: "Montserrat", sans-serif;
     line-height: 2rem;
-    font-size: 1rem; }
+    font-size: 1.15rem; }
     .experience .experience-info p {
       max-width: 500px;
       margin: 0 auto; }
@@ -531,6 +537,10 @@ img {
     justify-content: center;
     flex-direction: column;
     line-height: 0; }
+  .experience .experience-title {
+    font-size: 2rem; }
+  .experience .since {
+    color: #6e6e6e; }
 
 /* Numeros */
 .numbers-title {
@@ -538,7 +548,9 @@ img {
   font-size: 1.5rem; }
 
 .numbers-info {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  margin: 0 auto; }
 
 .svg-circle {
   width: 250px;
@@ -585,12 +597,15 @@ img {
 
 /* Clientes */
 .clients {
+  margin: 0 auto;
   padding: 4rem;
   background-color: #C2E7D9; }
   .clients h2 {
     font-family: "Libre Franklin", sans-serif;
     color: #253D5B;
-    width: 100%; }
+    width: 100%;
+    padding: 0 0 2rem 0;
+    font-size: 2rem; }
   .clients .client-cards {
     display: flex;
     flex-wrap: wrap;
@@ -606,16 +621,18 @@ img {
       .clients .client-cards .client-card .client-name {
         font-family: "Libre Franklin", sans-serif;
         font-weight: bold;
-        font-size: 1.3rem; }
+        font-size: 1.5rem;
+        color: #253D5B; }
       .clients .client-cards .client-card .client-position {
         font-family: "Libre Franklin", sans-serif;
         font-weight: bold;
-        font-size: .9rem;
-        line-height: 1rem; }
+        font-size: 1.15rem;
+        line-height: 1rem;
+        color: #6e6e6e; }
       .clients .client-cards .client-card .client-comment {
         line-height: 1rem;
         font-family: "Libre Franklin", sans-serif;
-        font-size: 1rem; }
+        font-size: 1.15rem; }
   .clients .container-circle-image {
     border-radius: 50%;
     margin: 0 auto;
@@ -646,7 +663,7 @@ img {
   .companies h2 {
     font-family: "Libre Franklin", sans-serif;
     color: #253D5B;
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   .companies .companies-icons {
     display: flex;
     align-content: center;
@@ -713,7 +730,138 @@ img {
       font-weight: bold;
       color: #fff; }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+  .main-image .title {
+    font-size: 1rem; }
+  .main-image .title-description {
+    font-size: 1rem; }
+
+  .main-arrow #arrow {
+    font-size: 1rem; }
+
+  .main-title {
+    font-size: 1rem; }
+
+  .main-description {
+    font-size: 1rem; }
+
+  .services-info {
+    width: 90%;
+    margin: 0 auto; }
+    .services-info .services-list {
+      text-align: center; }
+      .services-info .services-list .services-item {
+        font-size: 1.1rem;
+        margin: 2rem 0; }
+      .services-info .services-list .horas {
+        padding: 3rem 0 0 0; }
+
+  .cars .cars-title {
+    font-size: 1rem; }
+
+  .cars-list .cars-item {
+    font-size: 1rem; }
+
+  .contact-us .contact-btn {
+    font-size: 1.1rem; }
+
+  .experience .experience-info {
+    font-size: 1rem; }
+  .experience .experience-title {
+    font-size: 1rem; }
+
+  .numbers-title {
+    font-size: 1rem; }
+
+  .percent {
+    font-size: 1.1rem; }
+
+  .clients h2 {
+    font-size: 1rem; }
+  .clients .client-cards .client-card .client-name {
+    font-size: 1.1rem; }
+  .clients .client-cards .client-card .client-position {
+    font-size: 1rem; }
+  .clients .client-cards .client-card .client-comment {
+    font-size: 1rem; }
+
+  .companies h2 {
+    font-size: 1rem; }
+
+  .footer-description {
+    flex-direction: column-reverse; } }
+@media (max-width: 1200px) {
+  /* fontsize */
+  .main-image .title {
+    font-size: 2.25rem; }
+  .main-image .title-description {
+    font-size: 1.5rem; }
+
+  .main-arrow #arrow {
+    font-size: 1.5rem; }
+
+  .main-title {
+    font-size: 1.5rem; }
+
+  .main-description {
+    font-size: 1.15rem; }
+
+  body .main .services-info .container-circle {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    margin: 2rem 0; }
+  body .main .services-info .services-list {
+    padding: 4rem 0; }
+    body .main .services-info .services-list .services-item {
+      font-size: 1.25rem; }
+
+  .cars .cars-title {
+    font-size: 1.5rem; }
+
+  .cars-list .cars-item {
+    font-size: 1rem; }
+    .cars-list .cars-item img {
+      display: block;
+      width: 40px;
+      margin-left: 1rem;
+      margin-right: 0; }
+
+  .contact-us .contact-btn {
+    font-size: 1.25rem; }
+
+  .experience .experience-info {
+    font-size: 1.1rem; }
+  .experience .experience-title {
+    font-size: 1.5rem; }
+
+  .numbers-title {
+    font-size: 1.5rem; }
+
+  .percent {
+    font-size: 1.25rem; }
+
+  .clients h2 {
+    font-size: 1.5rem; }
+  .clients .client-cards .client-card .client-name {
+    font-size: 1.25rem; }
+  .clients .client-cards .client-card .client-position {
+    font-size: 1.1rem; }
+  .clients .client-cards .client-card .client-comment {
+    font-size: 1.1rem; }
+
+  .companies h2 {
+    font-size: 1.5rem; }
+
+  /* fontsize end */
+  .main-image {
+    height: 500px; }
+
+  .companies-icons {
+    flex-direction: column; }
+    .companies-icons .companies-image {
+      padding: 1rem; }
+
   .services-info {
     flex-direction: column; }
     .services-info .container-circle {
@@ -728,20 +876,22 @@ img {
     visibility: hidden;
     opacity: 0; }
 
-  .footer-description {
-    flex-direction: column-reverse; }
-
   .footer-info {
     flex-direction: column; }
 
   .experience .experience-titles {
     width: 100%; }
+    .experience .experience-titles .since {
+      line-height: 2rem; }
   .experience .experience-info {
     width: 100%;
-    min-width: 200px; } }
-@media (max-width: 1200px) {
+    min-width: 200px; }
+
+  .main-image {
+    height: 600px; }
+
   .services-info .container-circle {
-    width: 350px;
-    height: 350px; } }
+    width: 450px;
+    height: 450px; } }
 
 /*# sourceMappingURL=styles.css.map */

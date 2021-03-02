@@ -1,9 +1,260 @@
 // Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
 
 
-@media (max-width: 992px) {  
+    .main-image {
+        .title {
+            font-size: $phone-bigTitle;
+        }
+        .title-description {
+            font-size:$phone-title;
+        }
+    }
+    
+    .main-arrow {
+        #arrow {
+            font-size:$phone-title;
+        }
+    }
+    
+    .main-title {
+        font-size:$phone-title;
+    }
+    
+    .main-description {
+        font-size:$phone-font;
+    }
+    
+    .services-info {
+        width:90%;
+        margin:0 auto;
+        .services-list {
+      
+            text-align: center;
+
+            .services-item {
+                font-size:$phone-subtitle;
+                margin:2rem 0;
+                
+               
+            }
+            .horas {
+                padding:3rem 0 0 0;
+   
+            }
+            
+        }
+    }
+    
+    .cars {
+        .cars-title {
+            font-size:$phone-title ;
+        }
+    
+    }
+    
+    .cars-list {
+        .cars-item {
+            font-size:$phone-font;
+        }
+    }
+    
+    .contact-us {
+        .contact-btn {
+            font-size: $phone-subtitle;
+        }
+    }
+    
+    .experience {
+        .experience-info {
+            font-size:$phone-font ;
+        }
+        .experience-title {
+            font-size:$phone-title ;
+        }
+    }
+    
+    .numbers-title {
+        font-size: $phone-title;
+    }
+    
+    .percent {
+        font-size:$phone-subtitle ;
+    }
+    
+    .clients {
+        h2 {
+            font-size:$phone-title ;
+        }
+        .client-cards {
+            .client-card {
+                .client-name {
+                    font-size:$phone-subtitle ;
+                }
+                .client-position {
+                    font-size:$phone-font ;
+                }
+    
+                .client-comment{
+                    font-size:$phone-font ;
+                }
+            }
+        }
+    }
+    
+    
+    .companies {
+        h2 {
+            font-size:$phone-title ;
+        }
+    }
+
+    .footer-description {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 1200px) {  
+
+    /* fontsize */
 
 
+
+    .main-image {
+        .title {
+            font-size: $tablet-bigTitle;
+        }
+        .title-description {
+            font-size:$tablet-title;
+        }
+    }
+    
+    .main-arrow {
+        #arrow {
+            font-size:$tablet-title;
+        }
+    }
+    
+    .main-title {
+        font-size:$tablet-title;
+    }
+    
+    .main-description {
+        font-size:$desktop-font;
+    }
+
+    body {
+        .main {
+        
+            .services-info {
+                .container-circle {
+                    width:350px;
+                    height:350px;
+                    padding:0;
+                    margin:2rem 0;
+                }
+                .services-list {
+                    padding:4rem 0;
+                    .services-item {
+                        font-size:$tablet-subtitle;
+         
+
+               
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .cars {
+        .cars-title {
+            font-size:$tablet-title ;
+        }
+    
+    }
+    
+    .cars-list {
+        .cars-item {
+   
+            font-size:$phone-font;
+            img {
+                display: block;
+                width:40px;
+                margin-left:1rem;
+                margin-right:0;
+            }
+        }
+    }
+    
+    .contact-us {
+        .contact-btn {
+            font-size: $tablet-subtitle;
+        }
+    }
+    
+    .experience {
+        .experience-info {
+            font-size:$tablet-font ;
+        }
+        .experience-title {
+            font-size:$tablet-title ;
+        }
+    }
+    
+    .numbers-title {
+        font-size: $tablet-title;
+    }
+    
+    .percent {
+        font-size:$tablet-subtitle ;
+    }
+    
+    .clients {
+        h2 {
+            font-size:$tablet-title ;
+        }
+        .client-cards {
+            .client-card {
+                .client-name {
+                    font-size:$tablet-subtitle ;
+                }
+                .client-position {
+                    font-size:$tablet-font ;
+                }
+    
+                .client-comment{
+                    font-size:$tablet-font ;
+                }
+            }
+        }
+    }
+    
+    
+    .companies {
+        h2 {
+            font-size:$tablet-title ;
+        }
+    }
+    
+
+
+
+
+    /* fontsize end */
+
+    .main-image {
+        height:500px;
+    }
+
+    .companies-icons {
+        flex-direction: column;
+
+        .companies-image {
+            padding:1rem;
+        }
+    }
     .services-info {
         flex-direction: column;
 
@@ -23,9 +274,7 @@
         opacity: 0;
     }
 
-    .footer-description {
-        flex-direction: column-reverse;
-    }
+
 
     .footer-info {
         flex-direction: column;
@@ -34,6 +283,10 @@
     .experience {
         .experience-titles {
             width:100%;
+
+            .since {
+                line-height: 2rem;
+            }
         }
         .experience-info {
             width:100%;
@@ -43,23 +296,17 @@
         }
     
     }
-
-   
- 
-}
-
-@media (max-width: 1200px) {  
-
-
+    .main-image {
+        height:600px;
+    }
 
     .services-info {
 
         .container-circle {
-            width:350px;
-            height: 350px;
+            width:450px;
+            height: 450px;
         }
     }
-
 
    
  
