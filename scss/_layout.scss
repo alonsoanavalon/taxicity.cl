@@ -25,13 +25,15 @@ img {
     grid-area:main;
     margin:0;
     padding:0;
-
+    overflow-x: hidden;
 
 
  }
 
 .footer {
+    width:100%;
     grid-area: footer;
+    overflow-x: hidden;
 
 
 }

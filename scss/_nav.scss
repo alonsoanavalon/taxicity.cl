@@ -18,15 +18,15 @@
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        display: none;
+
 
   
 
         a{
-            padding:2rem;
+            padding:1rem;
             text-decoration: none;
-            color:$blue-secondary-color;
-            font-family: $primary-font;
+            color:#333;
+            font-family: $secondary-font;
             font-weight: bold;
             font-size: $desktop-font;
         }
@@ -34,8 +34,9 @@
         .nav-contact {
      
             padding:.8rem;
-            background-color: $green-color;
+            background-color: rgba(249, 178, 0, 0.6);
             border-radius: 2rem;
+            margin-left:1.5rem;
         }
     }
 }

@@ -2,6 +2,22 @@
 @media (max-width: 576px) { 
 
 
+    body {
+        .main {
+        
+            .services-info {
+                flex-direction: column-reverse;
+                .container-circle {
+
+  
+                    
+                }
+
+            }
+        }
+        
+    }
+
     .main-image {
         .title {
             font-size: $phone-bigTitle;
@@ -26,15 +42,221 @@
     }
     
     .services-info {
-        width:90%;
-        margin:0 auto;
+
         .services-list {
       
-            text-align: center;
+     
 
             .services-item {
                 font-size:$phone-subtitle;
                 margin:2rem 0;
+                
+               
+            }
+            .horas {
+                padding:3rem 0 0 0;
+   
+            }
+            
+        }
+    }
+    
+    .cars {
+        .cars-title {
+            font-size:$phone-title ;
+        }
+    
+    }
+    
+    .cars-list {
+        .cars-item {
+            font-size:$phone-font;
+        }
+    }
+    
+    .contact-us {
+        .contact-btn {
+            font-size: $phone-subtitle;
+        }
+    }
+    
+    .experience {
+        .experience-info {
+            font-size:$phone-font ;
+        }
+        .experience-title {
+            font-size:$phone-title ;
+        }
+    }
+    
+    .numbers-title {
+        font-size: $phone-title;
+    }
+    
+    .percent {
+        font-size:$phone-subtitle ;
+    }
+    
+    .clients {
+        h2 {
+            font-size:$phone-title ;
+        }
+        .client-cards {
+
+            .client-card {
+                text-align: center;
+                margin:1rem 0;
+                .client-name {
+                    font-size:$phone-subtitle ;
+                }
+                .client-position {
+                    font-size:$phone-font ;
+                }
+    
+                .client-comment{
+                    font-size:$phone-font ;
+                }
+            }
+        }
+    }
+    
+    
+    .companies {
+        h2 {
+            font-size:$phone-title ;
+            
+        }
+    }
+
+
+
+    .footer-description {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        .footer-browse,
+        .footer-contact {
+            text-align: center;
+
+            width: 300px;;
+            margin:0;
+            padding:0;
+        }
+    }
+
+}
+
+@media (max-width: 767px) { 
+
+
+    .nav {
+        justify-content: space-evenly;
+        .nav-menu {
+            background-color: rgba($color: #000000, $alpha: 
+            .9);
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            height:100%;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+
+            position:fixed;
+            z-index:998;
+            width:100%;
+         
+            opacity: 1;
+            top:0;
+            bottom:0;
+            right: 0;
+            left: 0;
+
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            -moz-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            -o-transform: translateX(100%);
+
+            a, .nav-contact {
+        
+                margin:2rem 0;
+                padding:0;
+                font-size: 1.5rem;
+                color:#fff;
+            }
+
+            .nav-contact {
+                padding:1rem;
+            }
+        }
+
+        .nav-menu.active {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            -o-transform: translateX(0%);
+        }
+    }
+
+    body {
+        .main {
+        
+            .services-info {
+            
+                .container-circle {
+  
+                    width:200px;
+                    height: 200px;
+                }
+
+                .services-list {
+             
+                }
+            }
+
+
+        }
+        
+    }
+
+    .main-image {
+        .title {
+            font-size: $phone-bigTitle;
+        }
+        .title-description {
+            font-size:$phone-title;
+        }
+    }
+    
+    .main-arrow {
+        #arrow {
+            font-size:$phone-title;
+        }
+    }
+    
+    .main-title {
+        font-size:$phone-title;
+    }
+    
+    .main-description {
+        font-size:$phone-font;
+    }
+    
+    .services-info {
+
+        .services-list {
+      
+     
+
+            .services-item {
+                font-size:$phone-subtitle;
+                margin:1rem 0;
                 
                
             }
@@ -115,7 +337,7 @@
 
 }
 
-@media (max-width: 1200px) {  
+@media (max-width: 992px) {  
 
     /* fontsize */
 
@@ -144,20 +366,27 @@
         font-size:$desktop-font;
     }
 
-    body {
+    
         .main {
         
             .services-info {
+  
                 .container-circle {
-                    width:350px;
-                    height:350px;
+                    min-width:350px;
+                    min-height:350px;
                     padding:0;
-                    margin:2rem 0;
+
+                   
+                    
                 }
                 .services-list {
-                    padding:4rem 0;
+                    padding:1rem 0;
+    
+
+                    margin-left:2rem;
                     .services-item {
                         font-size:$tablet-subtitle;
+                        
          
 
                
@@ -166,7 +395,7 @@
             }
         }
         
-    }
+     
 
     .cars {
         .cars-title {
@@ -235,6 +464,8 @@
     .companies {
         h2 {
             font-size:$tablet-title ;
+            padding-bottom:3rem;
+            
         }
     }
     
@@ -256,10 +487,10 @@
         }
     }
     .services-info {
-        flex-direction: column;
 
         .container-circle {
             margin:4rem 0;
+        
         }
     }
 
@@ -281,6 +512,8 @@
     }
 
     .experience {
+        width:90%;
+        margin:0 auto;
         .experience-titles {
             width:100%;
 
@@ -305,6 +538,7 @@
         .container-circle {
             width:450px;
             height: 450px;
+            margin:0;
         }
     }
 

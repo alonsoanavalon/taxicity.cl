@@ -4,3 +4,15 @@
 @import 'nav';
 @import 'main-image';
 @import 'mediaqueries';
+
+
+.hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
