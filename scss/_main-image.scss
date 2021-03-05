@@ -14,14 +14,14 @@
     top: 1.7rem;
     border:none;
     outline:none;
-    background-color: #333;
+    background-color: #F9B200;
     cursor: pointer;
     padding:0;
     margin:0;
     width:60px;
     height:60px;
     font-size:1.2rem;
-    color:#F9B200;
+    color:#333;
     border-radius:  50%          ;
     -webkit-border-radius:  50%          ;
     -moz-border-radius:  50%          ;
@@ -74,7 +74,7 @@
 
 
 .main-image {
-    background-image: url('/assets/main-image.png');
+    background-image: url('https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/main-image-min_qkpa4k.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,9 +95,7 @@
         line-height: 2rem;
 
 
-        padding:2rem;
-        background-color: rgba(137, 140, 146, 0.25);
-        border-radius: .4rem;
+
         
     }
 
@@ -116,6 +114,10 @@
     .title-description {
         font-size: $desktop-title;
         letter-spacing: .05rem;
+        background-color: rgba(137, 140, 146, 0.25);
+        padding:1rem;
+     
+        border-radius: .4rem;
     }
 }
 .main-arrow {
@@ -146,13 +148,14 @@
     letter-spacing: .02rem;
     line-height:1.5rem;
     padding-bottom:4rem;
+    max-width:1000px;
 }
 
 .services-info {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap-reverse;
     .services-list {
         text-align: start;
@@ -191,7 +194,7 @@
             right:0;
             left:0;
             margin: auto;
-            background-image: url('/assets/services-image.jpg');
+            background-image: url('https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/services-image-min_zpld3l.jpg');
             background-position: center;
             background-clip:border-box;
             background-position: center;
@@ -217,8 +220,9 @@
 }
 
 .cars-list {
-    width:80%;
+    width:60%;
     margin:0 auto;
+
     .cars-item {
         font-family: $primary-font;
         list-style: none;
@@ -229,6 +233,8 @@
         padding:1rem;
         position: relative;
         font-size: $desktop-font;
+        
+
   
     
     }
@@ -251,8 +257,9 @@
 
 
 .contact-us {
+    width:100%;
     height:500px;
-    background-image: url('/assets/contact-image.png');
+    background-image: url('https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/contact-image-min_ykb243.png');
     background-position: center;
     background-clip:border-box;
     background-size: cover;
@@ -263,6 +270,7 @@
     justify-content: center;
 
     .contact-btn {
+        text-decoration: none;
         border:none;
         padding:1rem;
         border-radius: .8rem;
@@ -346,6 +354,7 @@
 }
 .numbers-info {
     font-family: $primary-font;
+    font-size: $desktop-font;
     width:90%;
     margin: 0 auto;
 }
@@ -378,7 +387,7 @@
 }
 .progress {
     fill:none;
-    stroke:rgb(86, 143, 189);
+    stroke:#d39b0c;
     stroke-width: 10;
 
     
@@ -442,8 +451,9 @@
             min-width: 300px;
             max-width: 600px;;
             text-align: start;
-            padding:0 1rem;
+            padding:1rem;
             line-height: 0;
+            margin:1rem;
             
             .client-name {
                 font-family: $secondary-font;
@@ -457,7 +467,7 @@
                 font-family: $secondary-font;
                 font-weight: bold;
                 font-size:$desktop-font;
-                line-height: 1rem;
+                line-height: 1.5rem;
                 color: rgb(110, 110, 110);
      
             }
@@ -476,8 +486,8 @@
 
         margin:0 auto;
         margin-top:3rem;
-        width:300px;
-        height:300px;
+        width:350px;
+        height:350px;
         position: relative;
         box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
         .clients-image{ 
@@ -490,7 +500,7 @@
             right:0;
             left:0;
             margin: auto;
-            background-image: url('/assets/clients-image.jpg');
+            background-image: url('https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/clients-image-min_avkxxv.jpg');
             background-position: center;
             background-clip:border-box;
             background-position: center;
@@ -523,6 +533,7 @@
         margin:2rem auto;
         flex-wrap: wrap;
 
+        text-align: center;
         img {
             width:140px;
         }
@@ -557,7 +568,7 @@
 
             h2 {
                 font-family: $secondary-font;
-                color:$green-color;
+                color:#FDE099;
             }
             text-align: start;
 
@@ -619,3 +630,92 @@
         }
     }
 }
+
+
+/* Contact */
+
+/* Contacto */
+.contacto {
+    width: 80%;
+    max-width:900px;
+    min-width:350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-top: 2rem; }
+    .contacto h3 {
+      font-size: $tablet-title;
+ 
+      color: #333;;
+      font-family: $secondary-font;
+      font-weight: bold;
+  }
+  
+  .container-contact {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center; }
+  
+  .container-contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #fff; }
+  
+  .container-contact__form > h4 {
+    letter-spacing: 1px;
+    padding: 10px; }
+  
+  form {
+    width: 100%; }
+  
+  .container-contact__form > input,
+  .container-contact__form > textarea,
+  #submit {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #000;
+    border-style: none;
+    border-bottom: thin solid #ccc;
+    background-color: #fff;
+    outline: none;
+    font-family: $primary-font;
+    font-size: $tablet-font;
+  }
+  
+  .container-contact__form > textarea {
+    min-height: 200px;
+    max-height: 600px;
+
+    max-width:100%;
+    min-width:350px;
+    width:100%;
+  
+  }
+  
+  #submit {
+    width: 100px;
+
+    font-weight: bold;
+  }
+  
+  label {
+    margin-right: auto; }
+
+
+    #alfa {
+        width:200px;
+    }

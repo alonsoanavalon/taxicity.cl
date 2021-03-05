@@ -304,7 +304,7 @@ template {
 
 body {
   display: grid;
-  max-width: 1900px;
+  max-width: 1920px;
   margin: 0 auto;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, auto);
@@ -332,7 +332,7 @@ img {
 .nav {
   border: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 2rem; }
   .nav .nav-img {
     line-height: 0; }
@@ -350,7 +350,7 @@ img {
       color: #333;
       font-family: "Libre Franklin", sans-serif;
       font-weight: bold;
-      font-size: 1.15rem; }
+      font-size: 1.2rem; }
     .nav .nav-menu .nav-contact {
       padding: .8rem;
       background-color: rgba(249, 178, 0, 0.6);
@@ -368,14 +368,14 @@ img {
   top: 1.7rem;
   border: none;
   outline: none;
-  background-color: #333;
+  background-color: #F9B200;
   cursor: pointer;
   padding: 0;
   margin: 0;
   width: 60px;
   height: 60px;
   font-size: 1.2rem;
-  color: #F9B200;
+  color: #333;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -413,7 +413,7 @@ img {
   color: green; }
 
 .main-image {
-  background-image: url("/assets/main-image.png");
+  background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/main-image-min_qkpa4k.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -428,10 +428,7 @@ img {
   text-align: center;
   line-height: 0; }
   .main-image .main-titles {
-    line-height: 2rem;
-    padding: 2rem;
-    background-color: rgba(137, 140, 146, 0.25);
-    border-radius: .4rem; }
+    line-height: 2rem; }
   .main-image .title, .main-image .title-description {
     color: #fff;
     font-family: "Roboto", sans-serif; }
@@ -440,7 +437,10 @@ img {
     letter-spacing: .1rem; }
   .main-image .title-description {
     font-size: 2rem;
-    letter-spacing: .05rem; }
+    letter-spacing: .05rem;
+    background-color: rgba(137, 140, 146, 0.25);
+    padding: 1rem;
+    border-radius: .4rem; }
 
 .main-arrow {
   position: absolute;
@@ -460,17 +460,18 @@ img {
 .main-description {
   font-family: "Roboto", sans-serif;
   width: 90%;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   margin: 0 auto;
   letter-spacing: .02rem;
   line-height: 1.5rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  max-width: 1000px; }
 
 .services-info {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap-reverse; }
   .services-info .services-list {
     text-align: start;
@@ -504,7 +505,7 @@ img {
       right: 0;
       left: 0;
       margin: auto;
-      background-image: url("/assets/services-image.jpg");
+      background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/services-image-min_zpld3l.jpg");
       background-position: center;
       background-clip: border-box;
       background-position: center;
@@ -523,7 +524,7 @@ img {
   color: #333; }
 
 .cars-list {
-  width: 80%;
+  width: 60%;
   margin: 0 auto; }
   .cars-list .cars-item {
     font-family: "Roboto", sans-serif;
@@ -534,7 +535,7 @@ img {
     line-height: 2rem;
     padding: 1rem;
     position: relative;
-    font-size: 1.15rem; }
+    font-size: 1.2rem; }
   .cars-list .cars-list-style {
     width: 50px;
     position: absolute;
@@ -549,8 +550,9 @@ img {
 
 /* contact us */
 .contact-us {
+  width: 100%;
   height: 500px;
-  background-image: url("/assets/contact-image.png");
+  background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1614744884/taxicity/contact-image-min_ykb243.png");
   background-position: center;
   background-clip: border-box;
   background-size: cover;
@@ -559,6 +561,7 @@ img {
   align-items: center;
   justify-content: center; }
   .contact-us .contact-btn {
+    text-decoration: none;
     border: none;
     padding: 1rem;
     border-radius: .8rem;
@@ -585,7 +588,7 @@ img {
     width: 50%;
     font-family: "Roboto", sans-serif;
     line-height: 2rem;
-    font-size: 1.15rem; }
+    font-size: 1.2rem; }
     .experience .experience-info p {
       max-width: 500px;
       margin: 0 auto; }
@@ -616,6 +619,7 @@ img {
 
 .numbers-info {
   font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
   width: 90%;
   margin: 0 auto; }
 
@@ -642,7 +646,7 @@ img {
 
 .progress {
   fill: none;
-  stroke: #568fbd;
+  stroke: #d39b0c;
   stroke-width: 10; }
 
 .container-circles {
@@ -687,8 +691,9 @@ img {
       min-width: 300px;
       max-width: 600px;
       text-align: start;
-      padding: 0 1rem;
-      line-height: 0; }
+      padding: 1rem;
+      line-height: 0;
+      margin: 1rem; }
       .clients .client-cards .client-card .client-name {
         font-family: "Libre Franklin", sans-serif;
         font-weight: bold;
@@ -697,19 +702,19 @@ img {
       .clients .client-cards .client-card .client-position {
         font-family: "Libre Franklin", sans-serif;
         font-weight: bold;
-        font-size: 1.15rem;
-        line-height: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         color: #6e6e6e; }
       .clients .client-cards .client-card .client-comment {
         line-height: 1.5rem;
         font-family: "Libre Franklin", sans-serif;
-        font-size: 1.15rem; }
+        font-size: 1.2rem; }
   .clients .container-circle-image {
     border-radius: 50%;
     margin: 0 auto;
     margin-top: 3rem;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     position: relative;
     box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25); }
     .clients .container-circle-image .clients-image {
@@ -722,7 +727,7 @@ img {
       right: 0;
       left: 0;
       margin: auto;
-      background-image: url("/assets/clients-image.jpg");
+      background-image: url("https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/clients-image-min_avkxxv.jpg");
       background-position: center;
       background-clip: border-box;
       background-position: center;
@@ -745,7 +750,8 @@ img {
     justify-content: space-evenly;
     width: 90%;
     margin: 2rem auto;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    text-align: center; }
     .companies .companies-icons img {
       width: 140px; }
 
@@ -769,7 +775,7 @@ img {
       text-align: start; }
       .footer .footer-info .footer-description h2 {
         font-family: "Libre Franklin", sans-serif;
-        color: #C2E7D9; }
+        color: #FDE099; }
       .footer .footer-info .footer-description ul {
         margin: 2rem; }
     .footer .footer-info ul li {
@@ -804,7 +810,96 @@ img {
       font-weight: bold;
       color: #fff; }
 
+/* Contact */
+/* Contacto */
+.contacto {
+  width: 80%;
+  max-width: 900px;
+  min-width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-top: 2rem; }
+
+.contacto h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold; }
+
+.container-contact {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center; }
+
+.container-contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: #fff; }
+
+.container-contact__form > h4 {
+  letter-spacing: 1px;
+  padding: 10px; }
+
+form {
+  width: 100%; }
+
+.container-contact__form > input,
+.container-contact__form > textarea,
+#submit {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #000;
+  border-style: none;
+  border-bottom: thin solid #ccc;
+  background-color: #fff;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem; }
+
+.container-contact__form > textarea {
+  min-height: 200px;
+  max-height: 600px;
+  max-width: 100%;
+  min-width: 350px;
+  width: 100%; }
+
+#submit {
+  width: 100px;
+  font-weight: bold; }
+
+label {
+  margin-right: auto; }
+
+#alfa {
+  width: 200px; }
+
 @media (max-width: 576px) {
+  .nav-img {
+    width: 300px; }
+
+  .nav-btn {
+    top: 1.5rem; }
+
+  .contacto .container-contact__form > textarea {
+    min-height: 200px;
+    max-height: 600px;
+    max-width: 350px; }
+
   body .main .services-info {
     flex-direction: column-reverse; }
 
@@ -831,8 +926,10 @@ img {
   .cars .cars-title {
     font-size: 1rem; }
 
-  .cars-list .cars-item {
-    font-size: 1rem; }
+  .cars-list {
+    width: 100%; }
+    .cars-list .cars-item {
+      font-size: 1rem; }
 
   .contact-us .contact-btn {
     font-size: 1.1rem; }
@@ -851,8 +948,7 @@ img {
   .clients h2 {
     font-size: 1rem; }
   .clients .client-cards .client-card {
-    text-align: center;
-    margin: 1rem 0; }
+    text-align: center; }
     .clients .client-cards .client-card .client-name {
       font-size: 1.1rem; }
     .clients .client-cards .client-card .client-position {
@@ -876,44 +972,6 @@ img {
       margin: 0;
       padding: 0; } }
 @media (max-width: 767px) {
-  .nav {
-    justify-content: space-evenly; }
-    .nav .nav-menu {
-      background-color: rgba(0, 0, 0, 0.9);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      align-content: center;
-      justify-content: center;
-      text-align: center;
-      position: fixed;
-      z-index: 998;
-      width: 100%;
-      opacity: 1;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%); }
-      .nav .nav-menu a, .nav .nav-menu .nav-contact {
-        margin: 2rem 0;
-        padding: 0;
-        font-size: 1.5rem;
-        color: #fff; }
-      .nav .nav-menu .nav-contact {
-        padding: 1rem; }
-    .nav .nav-menu.active {
-      transform: translateX(0%);
-      -webkit-transform: translateX(0%);
-      -moz-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      -o-transform: translateX(0%); }
-
   body .main .services-info .container-circle {
     width: 200px;
     height: 200px; }
@@ -986,7 +1044,7 @@ img {
     font-size: 1.5rem; }
 
   .main-description {
-    font-size: 1.15rem; }
+    font-size: 1.2rem; }
 
   .main .services-info .container-circle {
     min-width: 350px;
@@ -1001,13 +1059,15 @@ img {
   .cars .cars-title {
     font-size: 1.5rem; }
 
-  .cars-list .cars-item {
-    font-size: 1rem; }
-    .cars-list .cars-item img {
-      display: block;
-      width: 40px;
-      margin-left: 1rem;
-      margin-right: 0; }
+  .cars-list {
+    width: 80%; }
+    .cars-list .cars-item {
+      font-size: 1rem; }
+      .cars-list .cars-item img {
+        display: block;
+        width: 40px;
+        margin-left: 1rem;
+        margin-right: 0; }
 
   .contact-us .contact-btn {
     font-size: 1.25rem; }
@@ -1078,6 +1138,42 @@ img {
     width: 450px;
     height: 450px;
     margin: 0; } }
+@media (max-width: 1200px) {
+  .nav .nav-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: #F9B200;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%); }
+    .nav .nav-menu a, .nav .nav-menu .nav-contact {
+      margin: 2rem 0;
+      padding: 0;
+      font-size: 1.5rem;
+      color: #fff; }
+    .nav .nav-menu .nav-contact {
+      padding: 1rem; }
+  .nav .nav-menu.active {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%); } }
 .hidden {
   opacity: 0;
   display: none;

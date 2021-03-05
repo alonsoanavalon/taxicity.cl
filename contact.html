@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="taxi, movil, turismo, vehiculo, transporte, ejecutivo, turismo, particulares, aeropuerto, encargo, convenios, empresas ">
+    <meta name="description" content="Taxicity entrega servicio de transporte para ejecutivos y turismo desde 14 años, contamos con una flota de 25 vehículos acondicionados">
+    <title>Taxicity.cl - Servicios de transporte Ejecutivo y Turismo</title>
+    <!-- Favicon -->
+
+    <link rel="icon" href="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/logo-taxicity_c6rib6.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-img">
+                <img class="logo" src="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/logo-taxicity_c6rib6.png" alt="logo-taxicity">
+            </div>
+            <button class="nav-btn hidden" id="btn-menu"><i class="fas fa-bars"></i></button>
+            <div id="btn-menu" class="nav-menu">
+                <a href="/">Inicio</a>
+                <a href="/#services">Servicios</a>
+                <a href="/#us">Nosotros</a>
+                <a class="nav-contact"href="/contact.html">Contacto</a>
+            </div>
+        </nav>
+ 
+    </header>
+
+    <button  class="whatsapp"><i class="whatsapp-icon fab fa-whatsapp"></i></button>
+
+    <main class="main-contact">
+        <section class="main-image">
+            <div class="main-titles">
+                <h2 class="title">Taxicity está a tu disposición</h2>
+                <h1 class="title-description">Servicio para empresas y particulares</h1>
+            </div>
+     <!--        <div class="main-arrow">
+                <i id="arrow" class="fas fa-arrow-down"></i>
+            </div> -->
+        </section>
+
+        <section id="contacto"class="contacto">
+            <h3>¿Deseas contratar nuestros servicios o realizar un convenio?</h3>
+            <h3>¡Contáctanos!</h3>
+            <div class="container-contact">
+                <form class="container-contact__form" id ="contact-form" action="correo.php" method="POST">  
+                
+                            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required > 
+            
+                            <input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
+    
+                            <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
+                            <textarea name="mensaje" id="textarea" placeholder="Escriba su mensaje..." required autofocus></textarea>
+                            <input type="submit" id="submit" value="Enviar">
+                </form> 
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer-info">
+
+            <div class="footer-description">
+                <ul class="footer-browse">  
+                    <h2>Navega</h2>
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+                <ul class="footer-contact">
+                    <h2>Contáctanos</h2>
+                    <li><img class="phone-svg" src="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/phone-min_jwuzxz.png" alt=""><a href="">+569 88058577</a></li>
+                    <li><img class="mail-svg" src="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/mail-min_bhlthc.png" alt=""><a href="">contacto@taxicity.cl</a></li>
+                </ul>
+            </div>
+
+            <img src="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/logo-taxicity_c6rib6.png" alt="" class="footer-logo">
+
+        </section>
+        <div class="copyright">
+            <img class="copyright-img" src="https://res.cloudinary.com/keyzen/image/upload/v1614744883/taxicity/copyright-min_i00hto.png" alt="">
+            <p class="copyright-info">
+                Taxicity todos los derechos reservados 2021
+            </p>
+        </div>
+    </footer>
+    
+
+    
+    <script src="/js/main.js" type="module"></script>
+</body>
+</html>

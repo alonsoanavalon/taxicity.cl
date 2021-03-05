@@ -35,10 +35,16 @@ function circleProgress() {
 const d = document;
 
 d.addEventListener("DOMContentLoaded", () => {
-    circleProgress()
-    responsiveQueries("btn-menu", "(max-width: 767px)", "hidden");
+    
+    
+    responsiveQueries("btn-menu", "(max-width: 1200px)", "hidden");
     hamburgerMenu(".nav-btn", ".nav-menu", ".nav-menu a", "active");
     clickOnWhatsapp('.whatsapp', '.whatsapp-icon', 'https://wa.link/81oslh')
+    
+    if (window.location.pathname == '/') {
+        circleProgress()
+    }
+   
 })
 
 

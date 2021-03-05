@@ -1,17 +1,32 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) { 
+    
+    .nav-img {
+        width:300px;
+    }
 
+    .nav-btn {
+        top:1.5rem;
+    }
+    .contacto {
+
+        .container-contact__form > textarea {
+            min-height: 200px;
+            max-height: 600px;
+
+            max-width:350px;
+
+  
+          
+        }
+    }
 
     body {
         .main {
         
             .services-info {
                 flex-direction: column-reverse;
-                .container-circle {
 
-  
-                    
-                }
 
             }
         }
@@ -69,6 +84,7 @@
     }
     
     .cars-list {
+        width:100%;
         .cars-item {
             font-size:$phone-font;
         }
@@ -105,7 +121,7 @@
 
             .client-card {
                 text-align: center;
-                margin:1rem 0;
+            
                 .client-name {
                     font-size:$phone-subtitle ;
                 }
@@ -153,56 +169,7 @@
 @media (max-width: 767px) { 
 
 
-    .nav {
-        justify-content: space-evenly;
-        .nav-menu {
-            background-color: rgba($color: #000000, $alpha: 
-            .9);
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            height:100%;
-            align-content: center;
-            justify-content: center;
-            text-align: center;
-
-            position:fixed;
-            z-index:998;
-            width:100%;
-         
-            opacity: 1;
-            top:0;
-            bottom:0;
-            right: 0;
-            left: 0;
-
-            transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            -moz-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            -o-transform: translateX(100%);
-
-            a, .nav-contact {
-        
-                margin:2rem 0;
-                padding:0;
-                font-size: 1.5rem;
-                color:#fff;
-            }
-
-            .nav-contact {
-                padding:1rem;
-            }
-        }
-
-        .nav-menu.active {
-            transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-            -moz-transform: translateX(0%);
-            -ms-transform: translateX(0%);
-            -o-transform: translateX(0%);
-        }
-    }
+  
 
     body {
         .main {
@@ -405,8 +372,10 @@
     }
     
     .cars-list {
+        width:80%;
         .cars-item {
-   
+            
+         
             font-size:$phone-font;
             img {
                 display: block;
@@ -542,7 +511,66 @@
         }
     }
 
+    
+
+
    
  
 }
+
+
+@media (max-width: 1200px) {  
+
+.nav {
+
+    .nav-menu {
+        background-color: rgba($color: #000000, $alpha: 
+        .9);
+        display:flex;
+        flex-direction: column;
+        align-items: #F9B200;
+        height:100%;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        position:fixed;
+        z-index:998;
+        width:100%;
+     
+        opacity: 1;
+        top:0;
+        bottom:0;
+        right: 0;
+        left: 0;
+
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+
+        a, .nav-contact {
+    
+            margin:2rem 0;
+            padding:0;
+            font-size: 1.5rem;
+            color:#fff;
+        }
+
+        .nav-contact {
+            padding:1rem;
+        }
+    }
+
+    .nav-menu.active {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+}
+
 
